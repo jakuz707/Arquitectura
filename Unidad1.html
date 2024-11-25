@@ -1,0 +1,104 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Unidad 1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Curso Arquitectura de computadoras</h1>
+            <div class="section-title">
+                <a href="index.html" class="button">Menú</a>
+                <span>UNIDAD 1</span>
+                <a href="Unidad2.html" class="button">Siguiente</a>
+            </div>
+            <hr style="width: 80%; margin: 20px auto; border: 1px solid #000;">
+        </nav>
+    </header>
+    <nav>
+        <h2>1.1.1 Modelos de arquitectura</h2><hr />
+        <h>1. Clásicos (Von Neumann y Harvard)</h>
+        <p>- Von Neumann: Propone que las instrucciones y los datos se almacenan en la misma memoria. Utiliza un único bus para transportar datos e instrucciones, lo que puede causar un "cuello de botella" (limitación en la velocidad).<br></p>
+        <p>- Harvard: Separa la memoria para datos y para instrucciones, lo que permite mayor eficiencia y velocidad.<br></p>
+
+        <h>2. Segmentados</h>
+        <p>- Divide el procesamiento en etapas o segmentos, donde cada parte del hardware realiza una función específica de manera concurrente.<br></p>
+
+        <h>3. De multiprocesamiento</h>
+        <p>- Involucra múltiples procesadores trabajando en paralelo para ejecutar varias tareas simultáneamente. Mejora el rendimiento en sistemas con alta demanda de procesamiento.<br></p>
+
+        <h2>1.1.2 Análisis de los componentes</h2><hr />
+        <h>1. Procesador (CPU)</h>
+        <p>- Encargado de interpretar y ejecutar instrucciones.<br></p>
+
+        <h>2. Memoria</h>
+        <p>- Almacena temporalmente las instrucciones y datos necesarios para la ejecución.<br></p>
+
+        <h>3. Dispositivos de entrada/salida</h>
+        <p>- Permiten la interacción entre el usuario y la computadora (teclado, pantalla, impresoras, etc.).<br></p>
+
+        <h2>1.2.1 Arquitecturas</h2><hr />
+        <h>- CISC (Complex Instruction Set Computing)</h>
+        <p>- Usa un conjunto amplio de instrucciones, muchas de ellas complejas. Ejemplo: Procesadores Intel x86.<br></p>
+
+        <h>- RISC (Reduced Instruction Set Computing)</h>
+        <p>- Usa un conjunto reducido de instrucciones simples, optimizadas para ejecutarse más rápido. Ejemplo: ARM (usado en dispositivos móviles).<br></p>
+
+        <h2>1.2.1.1 Unidad Central de Procesamiento (CPU)</h2><hr />
+        <p>- Compuesta por:<br></p>
+        <p>- Unidad de Control: Dirige el flujo de datos e instrucciones dentro del procesador.<br></p>
+        <p>- Unidad Aritmético Lógica (ALU): Realiza cálculos matemáticos y operaciones lógicas.<br></p>
+        <p>- Registros: Almacenan datos temporalmente para un acceso rápido.<br></p>
+
+        <h2>1.2.1.2 Unidad Aritmético-Lógica (ALU)</h2><hr />
+        <p>- Realiza las siguientes operaciones:<br></p>
+        <p>- Aritméticas: Suma, resta, multiplicación, división.<br></p>
+        <p>- Lógicas: AND, OR, NOT, XOR.<br></p>
+        <p>- Comparaciones: Igual, mayor que, menor que.<br></p>
+
+        <h2>1.2.1.3 Registros</h2><hr />
+        <p>- Memoria ultrarrápida dentro del procesador.<br></p>
+        <p>- Tipos:<br></p>
+        <p>- Registros de propósito general: Almacenan datos temporales.<br></p>
+        <p>- Registros de propósito específico: Ejemplo, contador de programa (PC), puntero de pila (SP).<br></p>
+
+        <h2>1.2.1.4 Buses</h2><hr />
+        <p>- Sistemas de comunicación que interconectan los componentes.<br></p>
+        <p>- Tipos:<br></p>
+        <p>- Bus de datos: Transporta datos entre CPU, memoria y dispositivos.<br></p>
+        <p>- Bus de direcciones: Identifica la ubicación en la memoria a la que se quiere acceder.<br></p>
+        <p>- Bus de control: Coordina las operaciones de los demás buses.<br></p>
+
+        <h2>1.2 Memoria</h2><hr />
+        <h>1.2.2.1 Conceptos básicos del manejo de memoria</h>
+        <p>- Jerarquía de memoria: Registros → Caché → Memoria principal (RAM) → Memoria secundaria (Disco duro).<br></p>
+        <p>- Memoria virtual: Simulación de una memoria más grande usando espacio en disco.<br></p>
+
+        <h2>1.2.2.2 Memoria principal</h2><hr/>
+        <p>- RAM (Random Access Memory): Volátil, almacena datos temporales.<br></p>
+        <p>- ROM (Read Only Memory): No volátil, contiene instrucciones esenciales (como el BIOS).<br></p>
+
+        <h2>1.2.2.3 Memoria caché</h2><hr />
+        <p>- Memoria rápida ubicada cerca del procesador. Funciona como un puente entre la CPU y la memoria principal.<br></p>
+        <p>- Tipos:<br></p>
+        <p>- L1: Integrada dentro del procesador, muy rápida pero pequeña.<br></p>
+        <p>- L2: Más grande que L1, pero más lenta.<br></p>
+        <p>- L3: Compartida entre núcleos, aún más grande pero más lenta.<br></p>
+
+        <h2>1.2.4 Buses</h2><hr />
+        <p>- Tipos de buses:<br></p>
+        <p>- Bus de datos: Transporta información binaria.<br></p>
+        <p>- Bus de direcciones: Lleva la ubicación donde deben leerse o escribirse datos.<br></p>
+        <p>- Bus de control: Transmite señales de control como lectura, escritura o interrupciones.<br></p>
+
+        <h2>1.2.5 Interrupciones</h2><hr />
+        <p>- Definición: Señales enviadas al procesador para indicar que debe detener su tarea actual y atender un evento específico.<br></p>
+        <p>- Tipos:<br></p>
+        <p>- Por hardware: Generadas por dispositivos externos (teclados, impresoras).<br></p>
+        <p>- Por software: Provocadas por el propio programa para solicitar servicios del sistema operativo.<br></p>
+
+    </nav>
+</body>
+</html>

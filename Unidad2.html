@@ -1,0 +1,81 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Unidad 2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Curso Arquitectura de computadoras</h1>
+            <div class="section-title">
+                <a href="index.html" class="button">Menú</a>
+                <span>UNIDAD 2</span>
+                <a href="Unidad3.html" class="button">Siguiente</a>
+            </div>
+            <hr style="width: 80%; margin: 20px auto; border: 1px solid #000;">
+        </nav>
+    </header>
+    <nav>
+        <h2>2.1 Organización del procesador</h2><hr />
+        <br>
+        El procesador, también conocido como CPU (Unidad Central de Procesamiento), está compuesto por tres elementos principales:<br><br>
+        Unidad de Control (CU): Coordina todas las operaciones de la computadora. Dirige el flujo de datos entre los componentes y asegura que las instrucciones se ejecuten en el orden correcto.<br>
+        Unidad Aritmético-Lógica (ALU): Realiza cálculos matemáticos básicos (como sumas o restas) y operaciones lógicas (como comparaciones).<br>
+        Registros: Memorias internas de alta velocidad que almacenan temporalmente datos e instrucciones durante el procesamiento.<br><br>
+        Estos componentes trabajan juntos para ejecutar programas y procesar datos. La eficiencia del procesador depende de su organización interna y capacidad para manejar tareas simultáneamente.<br><br>
+
+        <h2>2.2 Estructura y tipos de registros</h2><hr />
+        <br>
+        Los registros son pequeñas áreas de almacenamiento dentro de la CPU que permiten guardar temporalmente datos o instrucciones durante la ejecución de programas. Los principales tipos de registros son:<br><br>
+        Registro de propósito general: Se utilizan para almacenar datos que se manipulan durante el procesamiento.<br>
+        Registro de propósito específico: Diseñados para funciones específicas, como:<br>
+        - Contador de programa (PC): Guarda la dirección de la siguiente instrucción a ejecutar.<br>
+        - Registro de instrucciones (IR): Almacena la instrucción que se está ejecutando.<br>
+        - Acumulador (ACC): Guarda resultados intermedios de cálculos realizados por la ALU.<br><br>
+
+        <h2>2.3.1Ciclo Fetch-Decode-Execute (FDE)</h2><hr />
+        <br>
+        El ciclo Fetch-Decode-Execute es el proceso fundamental que permite a la CPU ejecutar instrucciones. Este se divide en tres etapas:<br><br>
+        Fetch (Obtener): Se localiza la instrucción en memoria y se transfiere al registro de instrucciones (IR).<br>
+        Decode (Decodificar): La unidad de control interpreta la instrucción y organiza los recursos necesarios para ejecutarla.<br>
+        Execute (Ejecutar): La ALU realiza la operación requerida (suma, comparación, etc.) o se transfiere un dato de memoria.<br><br>
+        El tiempo que toma este ciclo afecta directamente el rendimiento del procesador.<br><br>
+
+        <h2>2.3.2 Segmentación de instrucciones</h2><hr />
+        <br>
+        La segmentación es una técnica que divide las instrucciones en etapas, de forma que mientras una instrucción está siendo ejecutada, otra puede estar siendo decodificada y una tercera recuperada. Esto aumenta el rendimiento del procesador al aprovechar mejor sus recursos.<br>
+        Ejemplo de etapas en la segmentación:<br><br>
+        - Recuperación de instrucción.<br>
+        - Decodificación.<br>
+        - Ejecución.<br>
+        - Escritura del resultado.<br><br>
+
+        <h2>2.3.3 Conjunto de instrucciones</h2><hr />
+        <br>
+        El conjunto de instrucciones es el grupo de comandos que un procesador puede entender y ejecutar. Estos comandos incluyen operaciones como mover datos, realizar cálculos, controlar el flujo del programa, entre otros.<br>
+        Ejemplo de instrucciones comunes:<br><br>
+        - MOV: Mueve datos entre registros o memoria.<br>
+        - ADD: Suma valores en registros o memoria.<br>
+        - JMP: Salta a una dirección específica en el programa.<br><br>
+        Cada tipo de procesador tiene un conjunto de instrucciones único, definido por su arquitectura.<br><br>
+        
+        <h2>2.3.4 Modos de direccionamiento</h2><hr />
+        <br>
+        Los modos de direccionamiento indican cómo la CPU accede a los datos que necesita para ejecutar una instrucción. Algunos modos comunes son:<br><br>
+        - Directo: La dirección del dato está directamente en la instrucción.<br>
+        - Indirecto: La instrucción contiene una referencia a la ubicación del dato.<br>
+        - Inmediato: La instrucción contiene directamente el valor del dato.<br><br>
+        Estos modos permiten mayor flexibilidad en la programación y uso eficiente de los recursos.<br><br>
+
+        <h2>2.4 Estudio y análisis de la CPU</h2><hr />
+        <br>
+        El estudio de la CPU se centra en evaluar su rendimiento, compatibilidad y adecuación a las tareas requeridas. Factores clave en el análisis incluyen:<br><br>
+        - Benchmarking: Pruebas estándar que miden la velocidad y eficiencia de la CPU en distintas tareas.<br>
+        - Consumo energético: Evaluación de cuánta energía requiere el procesador, especialmente en dispositivos portátiles.<br>
+        - Compatibilidad: Asegurarse de que la CPU funcione correctamente con la placa base y otros componentes del sistema.<br>
+
+    </nav>
+</body>
+</html>

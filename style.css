@@ -1,0 +1,77 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Jura:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
+
+body {
+    background-color: #bdadda; /* Color de fondo */
+    margin: 0;
+    padding: 20px; /* Espacio interno para evitar contenido pegado al borde */
+    font-family: "Comfortaa", sans-serif; /* Fuente general */
+    max-width: 800px; /* Ancho máximo del contenido */
+    margin: 0 auto; /* Centra horizontalmente */
+    line-height: 1.6; /* Mejora la legibilidad del texto */
+    text-align: justify;
+}
+
+h1 {
+    font-family: "Jura", sans-serif; /* Fuente para el título */
+    text-align: center;
+    font-size: 40px; /* Tamaño más grande */
+}
+
+h2 {
+    font-family: "Jura", sans-serif; /* Fuente para el título */
+    text-align: center;
+}
+
+nav {
+    text-align: center;
+    margin-top: 20px;
+}
+
+    nav ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+        nav ul li {
+            display: inline-block;
+            margin: 0 15px;
+        }
+
+            nav ul li a {
+                text-decoration: none;
+                color: #000;
+                font-size: 18px;
+            }
+
+                nav ul li a:hover {
+                    color: #7400c6;
+                }
+
+.section-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-family: "Jura", sans-serif;
+    margin-top: 10px;
+}
+
+    .section-title span {
+        font-size: 24px;
+    }
+
+/* Estilo de los botones */
+.button {
+    text-decoration: none;
+    color: #000;
+    font-size: 18px;
+    padding: 5px 10px;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+}
+
+    .button:hover {
+        background-color: #d4c4f5;
+        color: #7400c6;
+    }
